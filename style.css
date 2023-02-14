@@ -1,0 +1,107 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Quicksand:wght@400;700&display=swap");
+
+/* 
+Color:
+- #525151
+- #ffffff
+- #a09d9d
+- #b10000
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #525151;
+}
+
+#form-input {
+  text-align: center;
+}
+#form-input h1 {
+  margin-bottom: 5px;
+}
+#form-input h3 {
+  margin-top: 5px;
+}
+#form-input input {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #525151;
+  border-radius: 3px;
+  color: #a09d9d;
+  font-size: 18px;
+}
+#form-input button {
+  padding: 5px 20px;
+  border: 1px solid #525151;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #525151;
+  font-size: 18px;
+}
+#form-input button:hover {
+  cursor: pointer;
+  border-radius: 3px;
+  color: #525151;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+#list > div {
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.list-item {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.list-item-detail {
+  display: flex;
+  align-items: center;
+}
+.list-item-detail input {
+  margin-right: 16px;
+}
+.list-item-detail input:checked ~ span {
+  text-decoration: line-through;
+  color: rgb(1, 184, 1);
+}
+
+.btn {
+  background-color: #b10000;
+  color: #ffffff;
+  padding: 5px;
+  border: 1px solid #b10000;
+  border-radius: 3px;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: #b10000;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #form-input input {
+    width: 100%;
+  }
+  #form-input button {
+    margin: 10px;
+  }
+  #list {
+    padding: 10px;
+  }
+  #list > div {
+    width: 100%;
+  }
+}
